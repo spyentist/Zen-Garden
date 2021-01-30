@@ -1,7 +1,13 @@
 @use 'variables' as *;
 
+@mixin uppercase-text {
+  text-transform: uppercase;
+  font-family: $font-family-2;
+}
+
+
 // mixins to take care of repeated patterns.
-@mixin set-font($size: 1em, $line-height: normal, $font: $fonts-body) {
+@mixin set-font($size: 1em, $line-height: normal, $font: $font-family-2) {
   font-family: $font;
   font-size: $size;
   line-height: $line-height;
@@ -27,7 +33,8 @@
 h2,
 h3,
 h4 {
-  font-family: $fonts-headline;
+  // font-family: $fonts-headline;
+  font-family: $font-family-headline;
   margin: 0;
 }
 h1 {
@@ -64,6 +71,7 @@ p {
   @include set-font(1em, 1.5em);
   padding: 0.5em 0;
   margin: 0;
+  letter-spacing: 5px;
 }
 
 a {

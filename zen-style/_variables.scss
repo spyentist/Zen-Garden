@@ -1,9 +1,39 @@
-$fonts-headline: "arial narrow", Arial, Verdana, sans-serif;
-$fonts-body: verdana, arial, sans-serif;
-$background-color: #daede2;
-$primary: #77c4d3;
-$accent1: #ea2e49;
-$accent2: rgba(246, 247, 146, 0.9);
-$grey-sidebar: rgba(51, 55, 69, 0.9);
-$text-dark: #333;
-$text-light: #fff;
+// $fonts-headline: "arial narrow", Arial, Verdana, sans-serif;
+// $fonts-body: 'astroSpace', 'edgeOfTheGalaxy', 'revamped';
+$background-color: #000;
+$font-color: #00FF00;
+$primary: black;
+$accent1: #00FF00;
+$accent2: blue;
+// $grey-sidebar: ;
+$text-dark: #000;
+$text-light: #FFF;
+
+
+
+$font-family-headline: 'astroSpace';
+$font-family-2: 'revamped';
+$font-bold: 700;
+$font-light: 300;
+
+$fonts-path: "../fonts" !default;
+
+/* In type partial */
+@font-face {
+  font-family: 'astroSpace';
+  src: url('#{$fonts-path}/AstroSpace/AstroSpace-eZ2Bg.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'revamped';
+  src: url('Zen-Garden/fonts/revamped/revamped/Revamped-X3q1a.ttf');
+  font-weight: $font-light;
+  font-style: normal;
+}
+
+
+
+
+
