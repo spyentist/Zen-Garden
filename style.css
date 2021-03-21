@@ -1,5 +1,148 @@
-@use 'molecules';
-@use 'atoms';
-@use 'organisms' as o;
-@use 'variables';
+/* In type partial */
+@font-face {
+  font-family: "astroSpace";
+  src: url("../fonts/AstroSpace/AstroSpace-eZ2Bg.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "revamped";
+  src: url("Zen-Garden/fonts/revamped/revamped/Revamped-X3q1a.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+h2,
+h3,
+h4 {
+  font-family: "astroSpace";
+  margin: 0;
+}
+
+h1 {
+  background: #00FF00;
+  color: #eeeeff;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h2 {
+  color: #eeeeff;
+  font-weight: 900;
+  /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200;
+  /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: "revamped";
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0;
+  letter-spacing: 5px;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #131212;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #00FF00;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 10px;
+  background: #eeeeff;
+}
+footer a {
+  color: #131212;
+  transition: color 0.2s ease-in-out;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  width: 30%;
+  border-bottom: none;
+}
+footer a:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+[role=banner] > h1 {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #eeeeff;
+}
+
+.summary {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #eeeeff;
+  padding: 15% 0;
+}
+.summary p:last-child {
+  border-top: 1px solid #00FF00;
+  margin-top: 1em;
+  padding-top: 1.5em;
+}
+.summary a {
+  color: #eeeeff;
+}
+
+body {
+  background: #131212;
+  color: white;
+}
+body > * {
+  margin: 10px;
+}
+
+.main div {
+  border: 2px solid #00FF00;
+  border-radius: 5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #00FF00;
+}
+.main div h3 {
+  text-align: center;
+}
+.main div a {
+  color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */
