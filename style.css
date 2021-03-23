@@ -1,3 +1,93 @@
+@use 'molecules';
+@use 'atoms';
+@use 'organisms' as o;
+@use 'variables';
+/* In type partial */
+@font-face {
+  font-family: 'astroSpace';
+  src: url("../fonts/AstroSpace/AstroSpace-eZ2Bg.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'revamped';
+  src: url("Zen-Garden/fonts/revamped/revamped/Revamped-X3q1a.ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+.intro {
+  background-color: #000;
+  color: #00FF00;
+  text-align: center;
+}
+
+.summary p:nth-child(2) {
+  border: 10px solid blue;
+  border-top: none;
+  padding-bottom: 0.5em;
+}
+
+.intro h1 {
+  padding: 0.5em;
+  border: 10px solid #00FF00;
+}
+
+.intro h2 {
+  color: blue;
+  border: 10px solid blue;
+  border-bottom: none;
+  padding: 1em;
+}
+
+.intro h1::after, .intro h1::before {
+  background-image: url("star.png");
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  content: "";
+}
+
+.intro h2::after, .intro h2::before {
+  background-image: url("star.png");
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  content: "";
+}
+
+.preamble h3::after, .preamble h3::before {
+  background-image: url("star.png");
+  background-size: 1em 1em;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  content: "";
+}
+
+.intro h2 {
+  margin-top: 2em;
+}
+
+.preamble h3 {
+  border: 10px solid #00FF00;
+  border-bottom: none;
+  padding: 1em;
+}
+
+.preamble p:nth-child(4) {
+  padding-bottom: 1em;
+  border: 10px solid #00FF00;
+  border-top: none;
+}
+/*# sourceMappingURL=style.css.map */
+=======
 /* In type partial */
 @font-face {
   font-family: "astroSpace";
