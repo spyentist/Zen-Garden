@@ -1,3 +1,4 @@
+
 @use 'molecules';
 @use 'atoms';
 @use 'organisms' as o;
@@ -102,3 +103,8 @@ $fonts-path: "../fonts" !default;
     border: 10px solid $font-color;
     border-top: none;
 }
+=======
+@use '_molecules';
+@use '_atoms';
+@use '_organisms'as o;
+@use '_variables';

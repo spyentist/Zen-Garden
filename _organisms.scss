@@ -1,0 +1,28 @@
+@use '_variables'as *;
+@use '_atoms'as atoms;
+@use '_molecules'as molecules;
+
+body {
+    background: $primary;
+    color: white;
+
+    >* {
+        margin: 10px;
+    }
+}
+
+.main div {
+    border: 2px solid $accent1;
+    border-radius: $special-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: $font-color;
+
+    h3 {
+        text-align: center;
+    }
+
+    a {
+        color: $accent2;
+    }
+}
