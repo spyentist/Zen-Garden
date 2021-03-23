@@ -58,7 +58,7 @@ $fonts-path: "../fonts" !default;
     color: $accent2;
     border: 10px solid $accent2;
     border-bottom: none;
-    padding: 1em;    
+    padding: 2em;
 }
 
 .intro h1::after, .intro h1::before{
@@ -69,6 +69,11 @@ $fonts-path: "../fonts" !default;
     height: 1em;
     width: 1em;
     content: "";
+    animation:spin 5s linear infinite;
+}
+@keyframes spin{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
 }
 
 .intro h2::after, .intro h2::before{
@@ -79,6 +84,11 @@ $fonts-path: "../fonts" !default;
     height: 1em;
     width: 1em;
     content: "";
+    animation:spin 5s linear infinite;
+}
+@keyframes spin{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
 }
 .preamble h3::after, .preamble h3::before{
     background-image: $star-image;
@@ -88,6 +98,11 @@ $fonts-path: "../fonts" !default;
     height: 1em;
     width: 1em;
     content: "";
+    animation:spin 5s linear infinite;
+}
+@keyframes spin{
+    from{transform:rotate(0deg)}
+    to{transform:rotate(360deg)}
 }
 
 .intro h2{
@@ -103,7 +118,7 @@ $fonts-path: "../fonts" !default;
     border: 10px solid $font-color;
     border-top: none;
 }
-=======
+
 @use '_molecules';
 @use '_atoms';
 @use '_organisms'as o;
