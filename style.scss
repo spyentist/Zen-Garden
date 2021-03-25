@@ -10,7 +10,7 @@ $background-color: #000;
 $font-color: #00FF00;
 $primary: black;
 $accent1: #00FF00;
-$accent2: blue;
+$accent2: #3d0099;
 // $grey-sidebar: ;
 $text-dark: #000;
 $text-light: #FFF;
@@ -39,6 +39,16 @@ $fonts-path: "../fonts" !default;
   src: url('Zen-Garden/fonts/revamped/revamped/Revamped-X3q1a.ttf');
   font-weight: $font-light;
   font-style: normal;
+}
+a{
+    color: $accent2;
+}
+
+h1,h2,h3,p{
+    transition: transform .2s;
+}
+h1:hover,h2:hover,h3:hover,p:hover{
+    transform: scale(1.1);
 }
 
 .intro{
@@ -71,7 +81,7 @@ $fonts-path: "../fonts" !default;
     width: 2em;
     content: "";
     animation: spin 5s linear infinite;
-    animation: MoveUpAndDown 3s ease-in infinite;
+    animation: MoveUpAndDown 4s ease-in infinite;
     position: absolute;
     left: 0;
     bottom: 0;
