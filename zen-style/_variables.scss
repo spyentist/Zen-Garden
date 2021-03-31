@@ -1,5 +1,7 @@
 // $fonts-headline: "arial narrow", Arial, Verdana, sans-serif;
-// $fonts-body: 'astroSpace', 'edgeOfTheGalaxy', 'revamped';
+$fonts-body: 'astroSpace',
+'edgeOfTheGalaxy',
+'revamped';
 $background-color: #000;
 $font-color: #00FF00;
 $primary: black;
@@ -32,8 +34,3 @@ $fonts-path: "../fonts" !default;
   font-weight: $font-light;
   font-style: normal;
 }
-
-
-
-
-
