@@ -52,11 +52,17 @@ footer {
     text-align: center;
 }
 
+.summary p {
+    padding: 1em;
+    color: $font-color;
+}
+
 .summary p:nth-child(2) {
     border: 10px solid $accent2;
     border-top: none;
     padding-bottom: 0.5em;
 }
+
 
 .intro h1 {
     padding: 0.5em;
@@ -68,7 +74,10 @@ footer {
     border: 10px solid $accent2;
     border-bottom: none;
     padding: 2em;
+    font-size: 2em;
+    margin-bottom: -4em;
 }
+
 
 .intro h1::before {
     background-image: $rocket-image;
@@ -94,7 +103,7 @@ footer {
     content: "";
     animation: MoveUpAndDown 4s ease-in infinite;
     position: absolute;
-    right: 0;
+    right: -2em;
     bottom: 0;
 }
 
@@ -159,6 +168,11 @@ footer {
     }
 }
 
+.preamble p{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 .preamble h3::after {
     background-image: $star-image;
     background-size: 1em 1em;
@@ -193,8 +207,46 @@ footer {
     }
 }
 
-.intro h2 {
+@media only screen and (max-width: 644px) {
+    .intro h1::before {
+        display: none;
+    }
+
+    .intro h1::after {
+        display: none;
+    }
+
+    .intro h2::after {
+        display: none;
+    }
+
+    .intro h2::before {
+        display: none;
+    }
+
+    .preamble h3::after {
+        display: none;
+    }
+
+    .preamble h3::before {
+        display: none;
+    }
+
+    .summary p:nth-child(1) {
+        margin-top: 2em;
+        padding: 2em;
+    }
+    .preamble p{
+        padding: 1em;
+    }
+}
+
+.intro h1 {
     margin-top: 2em;
+}
+
+.intro h2 {
+    margin-top: 1em;
 }
 
 .preamble h3 {
