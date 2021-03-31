@@ -40,6 +40,20 @@ h4 {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+p {
+    transition: transform .2s;
+}
+
+h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
+    transform: scale(1.1);
+}
+
 h1 {
     background: $accent1;
     color: $text-light;
@@ -85,9 +99,10 @@ p {
 
 a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    color: $text-dark;
+    // color: $text-dark;
     text-decoration: none;
     transition: border-color 0.2s ease-in-out;
+    color: $accent2;
 }
 
 a:hover {
