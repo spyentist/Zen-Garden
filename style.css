@@ -143,9 +143,14 @@ footer a:hover {
   text-align: center;
 }
 
+.summary {
+  padding-bottom: 5%;
+}
+
 .summary p {
   padding: 1em;
   color: #00FF00;
+  margin-bottom: -1rem;
 }
 
 .summary p:nth-child(2) {
@@ -163,9 +168,9 @@ footer a:hover {
   color: #3d0099;
   border: 10px solid #3d0099;
   border-bottom: none;
-  padding: 2em;
+  padding: 1em;
   font-size: 2em;
-  margin-bottom: -4em;
+  margin-bottom: -17%;
 }
 
 .intro h1::before {
@@ -309,8 +314,8 @@ footer a:hover {
     display: none;
   }
 
-  .summary p:nth-child(1) {
-    margin-top: 2em;
+  .summary p:nth-child(2) {
+    margin-top: -5%;
     padding: 2em;
   }
 
@@ -319,11 +324,7 @@ footer a:hover {
   }
 }
 .intro h1 {
-  margin-top: 2em;
-}
-
-.intro h2 {
-  margin-top: 1em;
+  margin-top: 5%;
 }
 
 .preamble h3 {

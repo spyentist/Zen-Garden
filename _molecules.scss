@@ -51,10 +51,14 @@ footer {
     color: $font-color;
     text-align: center;
 }
+.summary{
+    padding-bottom: 5%;
+}
 
 .summary p {
     padding: 1em;
     color: $font-color;
+    margin-bottom: -1rem;
 }
 
 .summary p:nth-child(2) {
@@ -73,9 +77,9 @@ footer {
     color: $accent2;
     border: 10px solid $accent2;
     border-bottom: none;
-    padding: 2em;
+    padding: 1em;
     font-size: 2em;
-    margin-bottom: -4em;
+    margin-bottom: -17%;
 }
 
 
@@ -232,8 +236,8 @@ footer {
         display: none;
     }
 
-    .summary p:nth-child(1) {
-        margin-top: 2em;
+    .summary p:nth-child(2) {
+        margin-top: -5%;
         padding: 2em;
     }
     .preamble p{
@@ -242,11 +246,7 @@ footer {
 }
 
 .intro h1 {
-    margin-top: 2em;
-}
-
-.intro h2 {
-    margin-top: 1em;
+    margin-top: 5%;
 }
 
 .preamble h3 {
