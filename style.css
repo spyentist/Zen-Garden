@@ -358,6 +358,12 @@ footer::before {
   width: auto;
 }
 
+.extra1 {
+  content: url(video-game-characters-png-7.png);
+  margin: auto auto;
+  width: 50%;
+}
+
 body {
   background: #131212;
   color: white;
