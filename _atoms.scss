@@ -32,6 +32,11 @@
 }
 
 // these styles here should describe how the atoms (elements) should appear most of the time.  They can be overridden at the molecule (block) as necessary
+.div-wrapper {
+    max-width: 95%;
+    margin: auto auto;
+}
+
 h2,
 h3,
 h4 {
@@ -45,6 +50,7 @@ h2,
 h3,
 p {
     transition: transform .2s;
+    max-width: 85ch;
 }
 
 h1:hover,
@@ -92,8 +98,9 @@ h4 {
 
 p {
     @include set-font(1em, 1.5em);
-    padding: 0.5em 0;
+    padding: 1em 1em;
     margin: 0;
+    
     letter-spacing: 5px;
 }
 

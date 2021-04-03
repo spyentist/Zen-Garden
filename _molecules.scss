@@ -4,7 +4,7 @@
 footer {
     @include atoms.set-flex(row, wrap, space-around);
     gap: 10px;
-    background: $text-light;
+    background: $footerbkg;
 
     a {
         color: $primary;
@@ -13,7 +13,7 @@ footer {
         text-decoration: none;
         text-align: center;
         font-weight: 700;
-        width: 30%;
+        width: 15%;
         border-bottom: none;
     }
 
@@ -215,3 +215,71 @@ footer {
 //     margin-left: -30%;
 //     padding: 5% 5% 5% 30%;
 // }
+
+
+// Ryan's coding additions
+aside >div {
+    margin-top: 2em;
+    background: $footerbkg;
+    margin: auto auto;
+    @include atoms.set-flex(column, wrap, center);
+    
+    div {
+        border: 1px black solid;
+        text-align: center;
+        transition: all 1.5s ease-in-out;
+        &:hover {
+            transition: all 1.5s ease-in-out;
+            box-shadow: 15px -15px 25px $background-color;
+        }
+        h3 {
+            width: 100%;
+            margin: auto auto;
+            text-align: center;
+
+            &:hover {
+                transform: none;
+            }
+        }
+    }
+
+    @media (min-width: 576px) {
+        @include atoms.set-flex(row, nowrap, center);
+
+        div {
+            width: 30%;
+        }
+    }
+}
+
+
+ul {
+    padding-left:0;
+    li{
+    list-style: none;
+    margin-block-start: 0;
+    padding:0;
+
+    a {
+        color: $text-light;
+    }
+}
+}
+
+#zen-requirements::after {
+    content:url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
+    height:120px;
+    width:auto;
+    position:relative;
+    bottom: 15%;
+    left:85%;
+    z-index: 3;
+}
+
+
+footer::before {
+    content:url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
+    height:120px;
+    width:auto;
+
+}

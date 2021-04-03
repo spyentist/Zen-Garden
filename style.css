@@ -11,6 +11,11 @@
   font-weight: 300;
   font-style: normal;
 }
+.div-wrapper {
+  max-width: 95%;
+  margin: auto auto;
+}
+
 h2,
 h3,
 h4 {
@@ -23,6 +28,7 @@ h2,
 h3,
 p {
   transition: transform 0.2s;
+  max-width: 85ch;
 }
 
 h1:hover,
@@ -72,7 +78,7 @@ p {
   font-family: "revamped";
   font-size: 1em;
   line-height: 1.5em;
-  padding: 0.5em 0;
+  padding: 1em 1em;
   margin: 0;
   letter-spacing: 5px;
 }
@@ -97,7 +103,7 @@ footer {
   flex-flow: row wrap;
   justify-content: space-around;
   gap: 10px;
-  background: #eeeeff;
+  background: #C41E3D;
 }
 footer a {
   color: #131212;
@@ -106,7 +112,7 @@ footer a {
   text-decoration: none;
   text-align: center;
   font-weight: 700;
-  width: 30%;
+  width: 15%;
   border-bottom: none;
 }
 footer a:hover {
@@ -288,6 +294,70 @@ footer a:hover {
   border-top: none;
 }
 
+aside > div {
+  margin-top: 2em;
+  background: #C41E3D;
+  margin: auto auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+aside > div div {
+  border: 1px black solid;
+  text-align: center;
+  transition: all 1.5s ease-in-out;
+}
+aside > div div:hover {
+  transition: all 1.5s ease-in-out;
+  box-shadow: 15px -15px 25px #000;
+}
+aside > div div h3 {
+  width: 100%;
+  margin: auto auto;
+  text-align: center;
+}
+aside > div div h3:hover {
+  transform: none;
+}
+@media (min-width: 576px) {
+  aside > div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  aside > div div {
+    width: 30%;
+  }
+}
+
+ul {
+  padding-left: 0;
+}
+ul li {
+  list-style: none;
+  margin-block-start: 0;
+  padding: 0;
+}
+ul li a {
+  color: #eeeeff;
+}
+
+#zen-requirements::after {
+  content: url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
+  height: 120px;
+  width: auto;
+  position: relative;
+  bottom: 15%;
+  left: 85%;
+  z-index: 3;
+}
+
+footer::before {
+  content: url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
+  height: 120px;
+  width: auto;
+}
+
 body {
   background: #131212;
   color: white;
@@ -302,6 +372,8 @@ body > * {
   padding: 10px;
   margin-bottom: 10px;
   color: #00FF00;
+  width: 90ch;
+  text-align: center;
 }
 .main div h3 {
   text-align: center;
