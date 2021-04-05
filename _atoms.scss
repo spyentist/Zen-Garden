@@ -19,7 +19,7 @@
 }
 
 @mixin uppercase($color: $text-dark) {
-    font-weight: 300;
+    font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $color;
@@ -50,7 +50,7 @@ h2,
 h3,
 p {
     transition: transform .2s;
-    max-width: 85ch;
+    // max-width: 85ch;
 }
 
 h1:hover,
@@ -58,28 +58,33 @@ h2:hover,
 h3:hover,
 p:hover {
     transform: scale(1.1);
+
+    @media (min-width: 576px) {
+        transform: scale(1.02);
+    }
 }
 
 h1 {
-    background: $accent1;
-    color: $text-light;
+    // background: $accent1;
+    // color: $text-light;
     display: inline-block;
-    font-weight: normal;
+    // font-weight: 900;
     margin-bottom: 1em;
-    padding: 0.5em 1em;
+    // padding: 0.5em 1em;
+    font-size: 3em;
 }
 
 h2 {
     color: $text-light;
     font-weight: 900;
     /* Heavy */
-    font-size: 6em;
+    font-size: 1.6em;
     letter-spacing: 1px;
     line-height: 1em;
 }
 
 h3 {
-    font-size: 2.25em;
+    font-size: 1.2em;
     font-weight: 200;
     /* Thin */
     letter-spacing: 1px;
@@ -100,16 +105,16 @@ p {
     @include set-font(1em, 1.5em);
     padding: 1em 1em;
     margin: 0;
-    
+
     letter-spacing: 5px;
 }
 
 a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     // color: $text-dark;
-    text-decoration: none;
+    text-decoration: underline;
     transition: border-color 0.2s ease-in-out;
-    color: $accent2;
+    color: $accent2 !important;
 }
 
 a:hover {

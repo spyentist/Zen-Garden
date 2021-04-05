@@ -28,13 +28,13 @@ footer {
 [role="banner"] {
     >h1 {
         // notice we have to reference the 'atoms' namespace to find our mixins.
-        @include atoms.uppercase($text-light);
+        @include atoms.uppercase($footerbkg);
     }
 }
 
 .summary {
     @include atoms.uppercase($text-light);
-    padding: 15% 0;
+    padding: 5% 0;
 
     p:last-child {
         @include atoms.divider;
@@ -43,6 +43,54 @@ footer {
     a {
         color: $text-light; //in this case the link wants to be light instead of the default dark
     }
+}
+
+.explanation h3 {
+    border: 10px solid $accent2;
+    border-bottom: none;
+    padding: 1em;
+}
+
+.explanation p:nth-child(3) {
+    border: 10px solid $accent2;
+    border-top: none;
+    margin-bottom: 2em;
+}
+
+.participation h3 {
+    border: 10px solid $accent1;
+    border-bottom: none;
+    padding: 1em;
+}
+
+.participation p:nth-child(4) {
+    border: 10px solid $accent1;
+    border-top: none;
+    margin-bottom: 2em;
+}
+
+.benefits h3 {
+    border: 10px solid $accent2;
+    border-bottom: none;
+    padding: 1em;
+}
+
+.benefits p:nth-child(2) {
+    border: 10px solid $accent2;
+    border-top: none;
+    margin-bottom: 2em;
+}
+
+.requirements h3 {
+    border: 10px solid $accent2;
+    border-bottom: none;
+    padding: 1em;
+}
+
+.requirements p:nth-child(6) {
+    border: 10px solid $accent2;
+    border-top: none;
+    margin-bottom: 2em;
 }
 
 
@@ -59,18 +107,78 @@ footer {
 }
 
 .intro h1 {
-    padding: 0.5em;
-    border: 10px solid $font-color;
+    // padding: 0.5em;
+    color: $footerbkg;
+    // border: 10px solid $footerbkg;
+    animation: blink 2s step-end 0s infinite;
+    -webkit-animation: blink 2s step-end 0s infinite;
 }
+
+@keyframes blink {
+    2% {
+        opacity: 0.0;
+    }
+
+    6% {
+        opacity: 1.0;
+    }
+
+    8% {
+        opacity: 0.0;
+    }
+
+    10% {
+        opacity: 1.0;
+    }
+
+    15% {
+        opacity: 0.0;
+    }
+
+    20% {
+        opacity: 1.0;
+    }
+
+    60% {
+        opacity: 1.0;
+    }
+
+    80% {
+        opacity: 0.0;
+    }
+
+    85% {
+        opacity: 0.0;
+    }
+
+    90% {
+        opacity: 1.0;
+    }
+
+    95% {
+        opacity: 0.0;
+    }
+
+    100% {
+        opacity: 1.0;
+    }
+}
+
+
+// .intro h1:first-letter {
+//     color: yellow;
+//     font-size: 1.1em;
+//     font-weight: bold;
+// }
 
 .intro h2 {
     color: $accent2;
     border: 10px solid $accent2;
     border-bottom: none;
-    padding: 2em;
+    padding: 1em;
 }
 
-.intro h1::before {
+.summary::before {
     background-image: $rocket-image;
     background-size: 5em 5em;
     background-repeat: no-repeat;
@@ -84,7 +192,7 @@ footer {
     bottom: 0;
 }
 
-.intro h1::after {
+.summary::after {
     background-image: $rocket-image;
     background-size: 10em 10em;
     background-repeat: no-repeat;
@@ -194,7 +302,8 @@ footer {
 }
 
 .intro h2 {
-    margin-top: 2em;
+    // margin-top: 2em;
+    text-align: end;
 }
 
 .preamble h3 {
@@ -218,20 +327,22 @@ footer {
 
 
 // Ryan's coding additions
-aside >div {
+aside>div {
     margin-top: 2em;
     background: $footerbkg;
     margin: auto auto;
     @include atoms.set-flex(column, wrap, center);
-    
+
     div {
         border: 1px black solid;
         text-align: center;
         transition: all 1.5s ease-in-out;
+
         &:hover {
             transition: all 1.5s ease-in-out;
             box-shadow: 15px -15px 25px $background-color;
         }
+
         h3 {
             width: 100%;
             margin: auto auto;
@@ -254,38 +365,47 @@ aside >div {
 
 
 ul {
-    padding-left:0;
-    li{
-    list-style: none;
-    margin-block-start: 0;
-    padding:0;
+    padding-left: 0;
 
-    a {
-        color: $text-light;
+    li {
+        list-style: none;
+        margin-block-start: 0;
+        padding: 0;
+
+        a {
+            color: $text-light;
+        }
     }
-}
 }
 
 #zen-requirements::after {
-    content:url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
-    height:120px;
-    width:auto;
-    position:relative;
-    bottom: 15%;
-    left:85%;
+    content: url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
+    // background-image: url('pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png');
+    // transform: scale(.1);
+    zoom: 0.1;
+    // background-size: 10px 20px;
+    // height: 120px;
+    // width: auto;
+    position: relative;
+    // bottom: 15%;
+    left: 85px;
     z-index: 3;
 }
 
 
 footer::before {
-    content:url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
-    height:120px;
-    width:auto;
+    content: url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
+    // background-image: url('pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png');
+    // transform: scale(.2);
+    zoom: 0.1;
+    // background-size: 10px 20px;
+    // height: 120px;
+    // width: auto;
 
 }
 
 .extra1 {
     content: url(video-game-characters-png-7.png);
-    margin:auto auto;
+    margin: auto auto;
     width: 50%;
 }

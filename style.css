@@ -28,7 +28,6 @@ h2,
 h3,
 p {
   transition: transform 0.2s;
-  max-width: 85ch;
 }
 
 h1:hover,
@@ -37,27 +36,32 @@ h3:hover,
 p:hover {
   transform: scale(1.1);
 }
+@media (min-width: 576px) {
+  h1:hover,
+h2:hover,
+h3:hover,
+p:hover {
+    transform: scale(1.02);
+  }
+}
 
 h1 {
-  background: #00FF00;
-  color: #eeeeff;
   display: inline-block;
-  font-weight: normal;
   margin-bottom: 1em;
-  padding: 0.5em 1em;
+  font-size: 3em;
 }
 
 h2 {
   color: #eeeeff;
   font-weight: 900;
   /* Heavy */
-  font-size: 6em;
+  font-size: 1.6em;
   letter-spacing: 1px;
   line-height: 1em;
 }
 
 h3 {
-  font-size: 2.25em;
+  font-size: 1.2em;
   font-weight: 200;
   /* Thin */
   letter-spacing: 1px;
@@ -85,9 +89,9 @@ p {
 
 a {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  text-decoration: none;
+  text-decoration: underline;
   transition: border-color 0.2s ease-in-out;
-  color: #3d0099;
+  color: #3d0099 !important;
 }
 
 a:hover {
@@ -121,18 +125,18 @@ footer a:hover {
 }
 
 [role=banner] > h1 {
-  font-weight: 300;
+  font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #eeeeff;
+  color: #C41E3D;
 }
 
 .summary {
-  font-weight: 300;
+  font-weight: 800;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #eeeeff;
-  padding: 15% 0;
+  padding: 5% 0;
 }
 .summary p:last-child {
   border-top: 1px solid #00FF00;
@@ -141,6 +145,54 @@ footer a:hover {
 }
 .summary a {
   color: #eeeeff;
+}
+
+.explanation h3 {
+  border: 10px solid #3d0099;
+  border-bottom: none;
+  padding: 1em;
+}
+
+.explanation p:nth-child(3) {
+  border: 10px solid #3d0099;
+  border-top: none;
+  margin-bottom: 2em;
+}
+
+.participation h3 {
+  border: 10px solid #00FF00;
+  border-bottom: none;
+  padding: 1em;
+}
+
+.participation p:nth-child(4) {
+  border: 10px solid #00FF00;
+  border-top: none;
+  margin-bottom: 2em;
+}
+
+.benefits h3 {
+  border: 10px solid #3d0099;
+  border-bottom: none;
+  padding: 1em;
+}
+
+.benefits p:nth-child(2) {
+  border: 10px solid #3d0099;
+  border-top: none;
+  margin-bottom: 2em;
+}
+
+.requirements h3 {
+  border: 10px solid #3d0099;
+  border-bottom: none;
+  padding: 1em;
+}
+
+.requirements p:nth-child(6) {
+  border: 10px solid #3d0099;
+  border-top: none;
+  margin-bottom: 2em;
 }
 
 .intro {
@@ -156,18 +208,57 @@ footer a:hover {
 }
 
 .intro h1 {
-  padding: 0.5em;
-  border: 10px solid #00FF00;
+  color: #C41E3D;
+  animation: blink 2s step-end 0s infinite;
+  -webkit-animation: blink 2s step-end 0s infinite;
 }
 
+@keyframes blink {
+  2% {
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  8% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .intro h2 {
   color: #3d0099;
   border: 10px solid #3d0099;
   border-bottom: none;
-  padding: 2em;
+  padding: 1em;
 }
 
-.intro h1::before {
+.summary::before {
   background-image: url("rocket.png");
   background-size: 5em 5em;
   background-repeat: no-repeat;
@@ -181,7 +272,7 @@ footer a:hover {
   bottom: 0;
 }
 
-.intro h1::after {
+.summary::after {
   background-image: url("rocket.png");
   background-size: 10em 10em;
   background-repeat: no-repeat;
@@ -279,7 +370,7 @@ footer a:hover {
   }
 }
 .intro h2 {
-  margin-top: 2em;
+  text-align: end;
 }
 
 .preamble h3 {
@@ -344,18 +435,15 @@ ul li a {
 
 #zen-requirements::after {
   content: url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
-  height: 120px;
-  width: auto;
+  zoom: 0.1;
   position: relative;
-  bottom: 15%;
-  left: 85%;
+  left: 85px;
   z-index: 3;
 }
 
 footer::before {
   content: url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
-  height: 120px;
-  width: auto;
+  zoom: 0.1;
 }
 
 .extra1 {
@@ -372,13 +460,14 @@ body > * {
   margin: 10px;
 }
 
+.main {
+  padding: 5% 0;
+  background: #000;
+}
+
 .main div {
-  border: 2px solid #00FF00;
-  border-radius: 5%;
-  padding: 10px;
   margin-bottom: 10px;
   color: #00FF00;
-  width: 90ch;
   text-align: center;
 }
 .main div h3 {
