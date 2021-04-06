@@ -438,17 +438,34 @@ ul li a {
   color: #eeeeff;
 }
 
-#zen-requirements::after {
+#zen-requirements {
+  height: 75%;
+  margin-top: -125px;
+}
+#zen-requirements::before {
   content: url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
   zoom: 0.1;
+  height: 0;
   position: relative;
-  left: 85px;
+  left: 27%;
   z-index: 3;
 }
+@media (min-width: 576px) {
+  #zen-requirements::before {
+    left: 28%;
+  }
+}
 
-footer::before {
+.benefits {
+  margin-bottom: -150px;
+}
+.benefits::after {
   content: url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
-  zoom: 0.1;
+  zoom: 0.25;
+  position: relative;
+  width: 0;
+  height: 0;
+  right: 25%;
 }
 
 .extra1 {
