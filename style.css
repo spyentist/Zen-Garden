@@ -373,6 +373,11 @@ footer a:hover {
   text-align: end;
 }
 
+@media only screen and (min-width: 500px) {
+  .intro h2 {
+    text-align: center;
+  }
+}
 .preamble h3 {
   border: 10px solid #00FF00;
   border-bottom: none;
