@@ -1,13 +1,13 @@
 /* In type partial */
 @font-face {
   font-family: "astroSpace";
-  src: url("../fonts/AstroSpace/AstroSpace-eZ2Bg.ttf");
+  src: url("./fonts/AstroSpace/AstroSpace-eZ2Bg.ttf");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "revamped";
-  src: url("Zen-Garden/fonts/revamped/revamped/Revamped-X3q1a.ttf");
+  src: url("./fonts/revamped/Revamped-X3q1a.ttf");
   font-weight: 300;
   font-style: normal;
 }
