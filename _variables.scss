@@ -18,7 +18,7 @@ $font-family-2: 'revamped';
 $font-bold: 800;
 $font-light: 300;
 
-$fonts-path: "../fonts" !default;
+$fonts-path: "./fonts" !default;
 
 $special-box: 5%;
 
@@ -32,7 +32,7 @@ $special-box: 5%;
 
 @font-face {
     font-family: 'revamped';
-    src: url('Zen-Garden/fonts/revamped/revamped/Revamped-X3q1a.ttf');
+    src: url('#{$fonts-path}/revamped/Revamped-X3q1a.ttf');
     font-weight: $font-light;
     font-style: normal;
 }
