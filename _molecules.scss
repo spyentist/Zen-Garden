@@ -107,9 +107,8 @@ footer {
 }
 
 .intro h1 {
-    // padding: 0.5em;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
     color: $footerbkg;
-    // border: 10px solid $footerbkg;
     animation: blink 2s step-end 0s infinite;
     -webkit-animation: blink 2s step-end 0s infinite;
 }
@@ -163,13 +162,6 @@ footer {
         opacity: 1.0;
     }
 }
-
-
-// .intro h1:first-letter {
-//     color: yellow;
-//     font-size: 1.1em;
-//     font-weight: bold;
-// }
 
 .intro h2 {
     color: $accent2;
@@ -317,14 +309,6 @@ footer {
     border: 10px solid $font-color;
     border-top: none;
 }
-
-// .preamble {
-//     background: rgba(255, 255, 255, 0.9);
-//     color: $text-dark;
-//     margin-left: -30%;
-//     padding: 5% 5% 5% 30%;
-// }
-
 
 // Ryan's coding additions
 aside>div {

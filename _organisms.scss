@@ -17,15 +17,8 @@ body {
 }
 
 .main div {
-    // border: 2px solid $accent1;
-    // border-radius: $special-box;
-    // border: 10px solid $font-color;
-
-    // padding: 1em 1em;
-
     margin-bottom: 10px;
     color: $font-color;
-    // width: 90ch;
     text-align: center;
 
     h3 {
@@ -36,15 +29,3 @@ body {
         color: $accent2;
     }
 }
-
-// .preamble h3 {
-//     border: 10px solid $font-color;
-//     border-bottom: none;
-//     padding: 1em;
-// }
-
-// .preamble p:nth-child(4) {
-//     padding-bottom: 1em;
-//     border: 10px solid $font-color;
-//     border-top: none;
-// }

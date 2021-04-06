@@ -40,7 +40,6 @@
 h2,
 h3,
 h4 {
-    // font-family: $fonts-headline;
     font-family: $font-family-headline;
     margin: 0;
 }
@@ -50,7 +49,6 @@ h2,
 h3,
 p {
     transition: transform .2s;
-    // max-width: 85ch;
 }
 
 h1:hover,
@@ -65,12 +63,9 @@ p:hover {
 }
 
 h1 {
-    // background: $accent1;
-    // color: $text-light;
+
     display: inline-block;
-    // font-weight: 900;
     margin-bottom: 1em;
-    // padding: 0.5em 1em;
     font-size: 3em;
 }
 
@@ -111,7 +106,6 @@ p {
 
 a {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    // color: $text-dark;
     text-decoration: underline;
     transition: border-color 0.2s ease-in-out;
     color: $accent2 !important;

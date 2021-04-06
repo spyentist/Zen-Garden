@@ -208,6 +208,7 @@ footer a:hover {
 }
 
 .intro h1 {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
   color: #C41E3D;
   animation: blink 2s step-end 0s infinite;
   -webkit-animation: blink 2s step-end 0s infinite;
