@@ -138,11 +138,6 @@ footer a:hover {
   color: #eeeeff;
   padding: 5% 0;
 }
-.summary p:last-child {
-  border-top: 1px solid #00FF00;
-  margin-top: 1em;
-  padding-top: 1.5em;
-}
 .summary a {
   color: #eeeeff;
 }
@@ -204,10 +199,11 @@ footer a:hover {
 .summary p:nth-child(2) {
   border: 10px solid #3d0099;
   border-top: none;
-  padding-bottom: 0.5em;
+  padding-top: -20em;
 }
 
 .intro h1 {
+  text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
   color: #C41E3D;
   animation: blink 2s step-end 0s infinite;
   -webkit-animation: blink 2s step-end 0s infinite;

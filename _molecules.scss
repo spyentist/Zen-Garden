@@ -36,10 +36,6 @@ footer {
     @include atoms.uppercase($text-light);
     padding: 5% 0;
 
-    p:last-child {
-        @include atoms.divider;
-    }
-
     a {
         color: $text-light; //in this case the link wants to be light instead of the default dark
     }
@@ -103,7 +99,7 @@ footer {
 .summary p:nth-child(2) {
     border: 10px solid $accent2;
     border-top: none;
-    padding-bottom: 0.5em;
+    padding-top: -20em;
 }
 
 .intro h1 {
