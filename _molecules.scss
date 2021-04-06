@@ -368,30 +368,40 @@ ul {
     }
 }
 
-#zen-requirements::after {
-    content: url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
-    // background-image: url('pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png');
-    // transform: scale(.1);
-    zoom: 0.1;
-    // background-size: 10px 20px;
-    // height: 120px;
-    // width: auto;
-    position: relative;
-    // bottom: 15%;
-    left: 85px;
-    z-index: 3;
+#zen-requirements {
+    height: 75%;
+    margin-top: -125px;
+
+    &::before {
+        content: url(pnghost_video-game-game-controllers-ark-survival-evolved-gamepad-games.png);
+        zoom: 0.1;
+        height: 0;
+        position: relative;
+        left: 27%;
+        z-index: 3;
+
+        @media (min-width: 576px) {
+            left: 28%;
+        }
+    }
 }
 
 
-footer::before {
-    content: url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
-    // background-image: url('pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png');
-    // transform: scale(.2);
-    zoom: 0.1;
-    // background-size: 10px 20px;
-    // height: 120px;
-    // width: auto;
 
+
+
+
+.benefits {
+    margin-bottom: -150px;
+
+    &::after {
+        content: url(pnghost_video-game-consoles-game-controllers-clip-art-gamepad-symbol-icon.png);
+        zoom: 0.25;
+        position: relative;
+        width: 0;
+        height: 0;
+        right: 25%;
+    }
 }
 
 .extra1 {
