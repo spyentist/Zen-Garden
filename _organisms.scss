@@ -29,3 +29,53 @@ body {
         color: $accent2;
     }
 }
+
+footer {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    animation: carousel 4s linear infinite running;
+
+
+    &:hover {
+        animation-play-state: paused;
+    }
+
+    a {
+        color: $text-light !important;
+        width: 6% !important;
+        font-size: $font14;
+        margin: 0 .3em;
+        padding: 1.2em;
+        background: $accent2;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .2s ease;
+        text-decoration: none !important;
+
+        &:hover {
+            background: rgba(255, 255, 255, .5);
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+
+    @media only screen and (min-width: 500px) {
+        a {
+            width: 13% !important;
+        }
+
+        @keyframes carousel {
+
+            0%,
+            100% {
+                transform: translateX(3%);
+            }
+
+            50% {
+                transform: translateX(-3%);
+            }
+        }
+    }
+}

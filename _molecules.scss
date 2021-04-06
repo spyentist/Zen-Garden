@@ -1,28 +1,6 @@
 @use '_variables'as *;
 @use '_atoms'as atoms;
 
-footer {
-    @include atoms.set-flex(row, wrap, space-around);
-    gap: 10px;
-    background: $footerbkg;
-
-    a {
-        color: $primary;
-        transition: color 0.2s ease-in-out;
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
-        font-weight: 700;
-        width: 15%;
-        border-bottom: none;
-    }
-
-    a:hover {
-        cursor: pointer;
-        color: $accent2;
-    }
-}
-
 // use the mixins from the atoms module to compose our molecules. If you prefer the terminology 'blocks' and 'elements' feel free to use it instead!
 //The base styling we made on our atoms (elements) does most of the work...here we would make any modifications on the elements if they need to appear differently in a certain molecule (block)
 [role="banner"] {
@@ -349,7 +327,6 @@ aside>div {
     }
 }
 
-
 ul {
     padding-left: 0;
 
@@ -381,11 +358,6 @@ ul {
         }
     }
 }
-
-
-
-
-
 
 .benefits {
     margin-bottom: -150px;

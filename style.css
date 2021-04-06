@@ -102,28 +102,6 @@ abbr {
   text-decoration: none;
 }
 
-footer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  gap: 10px;
-  background: #C41E3D;
-}
-footer a {
-  color: #131212;
-  transition: color 0.2s ease-in-out;
-  padding: 10px;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 700;
-  width: 15%;
-  border-bottom: none;
-}
-footer a:hover {
-  cursor: pointer;
-  color: #3d0099;
-}
-
 [role=banner] > h1 {
   font-weight: 800;
   letter-spacing: 2px;
@@ -493,6 +471,47 @@ body > * {
 }
 .main div a {
   color: #3d0099;
+}
+
+footer {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  animation: carousel 4s linear infinite running;
+}
+footer:hover {
+  animation-play-state: paused;
+}
+footer a {
+  color: #eeeeff !important;
+  width: 6% !important;
+  font-size: 14px;
+  margin: 0 0.3em;
+  padding: 1.2em;
+  background: #3d0099;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  text-decoration: none !important;
+}
+footer a:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+@media only screen and (min-width: 500px) {
+  footer a {
+    width: 13% !important;
+  }
+  @keyframes carousel {
+    0%, 100% {
+      transform: translateX(3%);
+    }
+    50% {
+      transform: translateX(-3%);
+    }
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
